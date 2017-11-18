@@ -1,0 +1,18 @@
+In file CriminalDatabase.cs
+
+Line 23, assign ServicePointManager.ServerCertificateValidationCallback to MonoSecurityBypass.
+
+Line 30, MonoSecurityBypass function using X509Certificate.
+
+ISSUE: System.Security.Cryptography not supported on Hololens runtime
+
+
+In file CriminalDatabase.cs
+
+Line 285, function AddFaceToPerson
+
+Images located in BatmanCowl\HackerLabsBatmanCowl\Assets\StreamingAssets
+
+Line 459, Image byte array loaded by "File.ReadAllBytes(imagePath)"
+
+ISSUE: Response from server is InvalidImageSize, "Image Size Too Small"
